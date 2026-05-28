@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réserver un Vol — MadaTours Corporate</title>
+  <meta name="description" content="Réservez vos vols d'affaires avec MadaTours Corporate. Classe affaires, first class, tarifs négociés, billets flexibles. Madagascar et international." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="rgba(255,255,255,0.12)"/><path d="M8 24l6-12 4 6 5-9 6 15" stroke="#38E5FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="29" cy="14" r="3" fill="#1565C0"/></svg>
+      <div class="logo-text"><span class="logo-name">MadaTours</span><span class="logo-tag">Corporate Travel</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="hotel.html" class="nav-link">Hôtels</a></li>
+      <li><a href="vol.html" class="nav-link active">Vols</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:+261202252000" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +261 20 22 520 00
+      </a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Demander un Devis</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span class="hbg-bar"></span><span class="hbg-bar"></span><span class="hbg-bar"></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mob-link">Accueil</a>
+  <a href="hotel.html" class="mob-link">Réserver un Hôtel</a>
+  <a href="vol.html" class="mob-link active">Réserver un Vol</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+  <a href="contact.html" class="btn btn-primary btn-full mob-cta">Demander un Devis</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-glow"></div>
+  <!-- Animated plane path -->
+  <div style="position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0">
+    <svg viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;bottom:0;width:100%;opacity:.06">
+      <path d="M0 200 Q360 80 720 200 Q1080 320 1440 140" stroke="white" stroke-width="2" stroke-dasharray="8 6"/>
+    </svg>
+  </div>
+  <div class="container">
+    <div class="ph-inner">
+      <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);padding:6px 20px;border-radius:999px;margin-bottom:20px;backdrop-filter:blur(10px)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        <span style="font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85)">Vols Business &amp; First Class</span>
+      </div>
+      <h1 class="disp-lg">Réservez votre Vol d'Affaires</h1>
+      <p class="lead">Accès aux meilleures compagnies aériennes — tarifs négociés, billets flexibles, lounge VIP et assistance dédiée 24h/7j.</p>
+      <!-- Quick trust badges -->
+      <div style="display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:28px">
+        <div style="display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.65);font-size:.82rem;font-weight:500">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Billet flexible inclus
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.65);font-size:.82rem;font-weight:500">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Émission en moins de 2h
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.65);font-size:.82rem;font-weight:500">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Accréditation IATA
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLIGHT BOOKING FORM -->
+<section class="bk-sec">
+  <div class="container">
+    <div class="bk-card">
+      <div class="bk-head">
+        <div class="bk-head-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </div>
+        <div>
+          <h3>Recherche de Vols</h3>
+          <span style="font-size:.8rem;color:rgba(255,255,255,.55)">Accès à plus de 500 compagnies aériennes — tarifs exclusifs corporate</span>
+        </div>
+      </div>
+      <div class="bk-body">
+
+        <!-- Trip type & class -->
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:20px">
+          <div>
+            <label class="f-lbl-dk" style="margin-bottom:8px">Type de voyage</label>
+            <div class="trip-type">
+              <button class="tt-btn active" id="ttAR" onclick="setFlightType('AR')">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3L4 7l4 4M4 7h16M16 21l4-4-4-4M20 17H4"/></svg>
+                Aller-Retour
+              </button>
+              <button class="tt-btn" id="ttAS" onclick="setFlightType('AS')">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                Aller Simple
+              </button>
+              <button class="tt-btn" id="ttMC" onclick="setFlightType('MC')">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 17 9 11 13 15 21 7"/></svg>
+                Multi-Destinations
+              </button>
+            </div>
+          </div>
+          <div>
+            <label class="f-lbl-dk" style="margin-bottom:8px">Classe</label>
+            <div class="class-tabs" style="min-width:340px">
+              <button class="c-tab" onclick="setClass(this,'eco')">Économique</button>
+              <button class="c-tab active" onclick="setClass(this,'bus')">Affaires</button>
+              <button class="c-tab" onclick="setClass(this,'fst')">Première</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Origin / Destination / Dates -->
+        <div style="display:grid;grid-template-columns:1fr auto 1fr 1fr 1fr;gap:14px;align-items:end;margin-bottom:16px" class="flight-main-row">
+          <div class="fg">
+            <label class="f-lbl-dk">Ville de départ</label>
+            <div style="position:relative">
+              <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--g400);pointer-events:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              <input class="fi-dk" id="origin" style="padding-left:42px" type="text" placeholder="TNR — Antananarivo Ivato" autocomplete="off"/>
+            </div>
+          </div>
+
+          <!-- Swap button -->
+          <button class="swap-btn" onclick="swapRoutes()" title="Inverser les villes" aria-label="Inverser départ et destination">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3L4 7l4 4M4 7h16M16 21l4-4-4-4M20 17H4"/></svg>
+          </button>
+
+          <div class="fg">
+            <label class="f-lbl-dk">Ville d'arrivée</label>
+            <div style="position:relative">
+              <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--g400);pointer-events:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <input class="fi-dk" id="dest" style="padding-left:42px" type="text" placeholder="CDG — Paris Charles de Gaulle" autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="fg">
+            <label class="f-lbl-dk">Date de départ</label>
+            <div style="position:relative">
+              <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--g400);pointer-events:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <input class="fi-dk" id="depDate" style="padding-left:42px" type="date"/>
+            </div>
+          </div>
+
+          <div class="fg" id="retDateGroup">
+            <label class="f-lbl-dk">Date de retour</label>
+            <div style="position:relative">
+              <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--g400);pointer-events:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <input class="fi-dk" id="retDate" style="padding-left:42px" type="date"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- Passengers row -->
+        <div class="bk-row bk-row-4" style="margin-bottom:20px">
+          <div class="fg">
+            <label class="f-lbl-dk">Passagers adultes</label>
+            <div style="display:flex;align-items:center;gap:12px;background:var(--g50);border:1.5px solid var(--g200);border-radius:var(--r-sm);padding:10px 16px">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--g400)" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span style="flex:1;font-size:.9rem;color:var(--g700)">Adultes</span>
+              <div style="display:flex;align-items:center;gap:10px">
+                <button class="ctr-btn" style="background:var(--g200);border-color:var(--g300);color:var(--g700)" onclick="counterDk('paxAdult',-1)">−</button>
+                <span style="font-weight:700;color:var(--navy);min-width:20px;text-align:center" id="paxAdult">1</span>
+                <button class="ctr-btn" style="background:var(--g200);border-color:var(--g300);color:var(--g700)" onclick="counterDk('paxAdult',1)">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="fg">
+            <label class="f-lbl-dk">Bagages inclus</label>
+            <select class="fs-dk">
+              <option>Bagage cabine uniquement</option>
+              <option>1 bagage soute (23 kg)</option>
+              <option>2 bagages soute</option>
+              <option>Franchise illimitée (First)</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label class="f-lbl-dk">Compagnie préférée</label>
+            <select class="fs-dk">
+              <option value="">Toutes compagnies</option>
+              <option>Air Madagascar</option>
+              <option>Air France</option>
+              <option>Ethiopian Airlines</option>
+              <option>Kenya Airways</option>
+              <option>Turkish Airlines</option>
+              <option>Emirates</option>
+              <option>Air Austral</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label class="f-lbl-dk">Escales</label>
+            <select class="fs-dk">
+              <option>Sans préférence</option>
+              <option>Vol direct uniquement</option>
+              <option>Maximum 1 escale</option>
+              <option>Maximum 2 escales</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Advanced toggle -->
+        <button class="adv-toggle" id="flightAdvToggle" onclick="toggleFlightAdv()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          Options avancées (heure de départ, programme fidélité, siège, repas)
+        </button>
+
+        <div class="adv-opts" id="flightAdvOpts">
+          <div class="bk-row bk-row-4">
+            <div class="fg">
+              <label class="f-lbl-dk">Heure de départ</label>
+              <select class="fs-dk">
+                <option>Indifférent</option>
+                <option>Matin (06h–12h)</option>
+                <option>Après-midi (12h–18h)</option>
+                <option>Soir (18h–00h)</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="f-lbl-dk">Programme fidélité</label>
+              <input class="fi-dk" type="text" placeholder="N° Flying Blue, Miles & More..."/>
+            </div>
+            <div class="fg">
+              <label class="f-lbl-dk">Préférence siège</label>
+              <select class="fs-dk">
+                <option>Sans préférence</option>
+                <option>Hublot</option>
+                <option>Couloir</option>
+                <option>Rangée avant</option>
+                <option>Sortie de secours</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="f-lbl-dk">Repas spécial</label>
+              <select class="fs-dk">
+                <option>Standard</option>
+                <option>Végétarien</option>
+                <option>Halal</option>
+                <option>Casher</option>
+                <option>Sans gluten</option>
+                <option>Sans lactose</option>
+              </select>
+            </div>
+          </div>
+          <div class="fg" style="margin-top:16px">
+            <label class="f-lbl-dk">Instructions particulières</label>
+            <textarea class="fi-dk" rows="3" placeholder="Besoins spéciaux, fauteuil roulant, voyageur fréquent, assistance médicale..."></textarea>
+          </div>
+        </div>
+
+        <!-- Budget range -->
+        <div style="margin-top:20px;padding:20px;background:var(--g50);border-radius:var(--r-md);border:1px solid var(--g200)">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+            <label class="f-lbl-dk" style="margin-bottom:0">Budget maximum par passager</label>
+            <span style="font-weight:700;color:var(--blue);font-size:.95rem" id="flightBudgetVal">5 000 €</span>
+          </div>
+          <input type="range" min="200" max="15000" value="5000" step="100" style="width:100%;accent-color:var(--blue);height:4px" oninput="updateFlightBudget(this.value)"/>
+          <div style="display:flex;justify-content:space-between;margin-top:6px">
+            <span style="font-size:.75rem;color:var(--g400)">200 €</span>
+            <span style="font-size:.75rem;color:var(--g400)">15 000 €+</span>
+          </div>
+        </div>
+
+        <div style="margin-top:24px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+          <button class="btn btn-cta btn-lg" onclick="searchFlights(this)" style="min-width:220px">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            Rechercher des Vols
+          </button>
+          <button class="btn btn-secondary" onclick="resetFlightForm()">Réinitialiser</button>
+          <span style="font-size:.82rem;color:var(--g400);margin-left:4px">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle;margin-right:4px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Paiement 100% sécurisé · Émission sous 2h
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR ROUTES -->
+<section class="section">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Destinations Fréquentes</span>
+      <h2 class="disp-md">Liaisons Business Populaires</h2>
+      <div class="divider"></div>
+      <p class="lead">Les routes les plus empruntées par nos clients entreprises, avec vols réguliers et connexions optimisées.</p>
+    </div>
+    <div class="routes-grid">
+      <div class="rt-card reveal delay-1">
+        <div class="rt-img">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=82&fit=crop" alt="Antananarivo vers Paris" loading="lazy"/>
+          <div class="rt-ov"></div>
+          <div class="rt-airports">
+            <span class="rt-ap">TNR</span>
+            <div class="rt-line"></div>
+            <span class="rt-ap">CDG</span>
+          </div>
+        </div>
+        <div class="rt-body">
+          <div class="rt-dest">Antananarivo → Paris Charles de Gaulle</div>
+          <div class="rt-freq">Air France · Ethiopian · Turkish — 3 vols/semaine</div>
+          <div class="rt-price">À partir de 1 850 € <span>/ pers. classe affaires</span></div>
+          <button class="btn btn-primary btn-sm btn-full" style="margin-top:12px" onclick="bookFlight('TNR','CDG')">Rechercher ce vol</button>
+        </div>
+      </div>
+      <div class="rt-card reveal delay-2">
+        <div class="rt-img">
+          <img src="https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2?w=600&q=82&fit=crop" alt="Antananarivo vers Dubai" loading="lazy"/>
+          <div class="rt-ov"></div>
+          <div class="rt-airports">
+            <span class="rt-ap">TNR</span>
+            <div class="rt-line"></div>
+            <span class="rt-ap">DXB</span>
+          </div>
+        </div>
+        <div class="rt-body">
+          <div class="rt-dest">Antananarivo → Dubai International</div>
+          <div class="rt-freq">Emirates · Air France — 4 vols/semaine</div>
+          <div class="rt-price">À partir de 1 480 € <span>/ pers. classe affaires</span></div>
+          <button class="btn btn-primary btn-sm btn-full" style="margin-top:12px" onclick="bookFlight('TNR','DXB')">Rechercher ce vol</button>
+        </div>
+      </div>
+      <div class="rt-card reveal delay-3">
+        <div class="rt-img">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=82&fit=crop" alt="Antananarivo vers Nairobi" loading="lazy"/>
+          <div class="rt-ov"></div>
+          <div class="rt-airports">
+            <span class="rt-ap">TNR</span>
+            <div class="rt-line"></div>
+            <span class="rt-ap">NBO</span>
+          </div>
+        </div>
+        <div class="rt-body">
+          <div class="rt-dest">Antananarivo → Nairobi Jomo Kenyatta</div>
+          <div class="rt-freq">Kenya Airways · Ethiopian — 5 vols/semaine</div>
+          <div class="rt-price">À partir de 890 € <span>/ pers. classe affaires</span></div>
+          <button class="btn btn-primary btn-sm btn-full" style="margin-top:12px" onclick="bookFlight('TNR','NBO')">Rechercher ce vol</button>
+        </div>
+      </div>
+      <div class="rt-card reveal delay-1">
+        <div class="rt-img">
+          <img src="https://images.unsplash.com/photo-1549836938-d278c5d46d25?w=600&q=82&fit=crop" alt="Antananarivo vers La Réunion" loading="lazy"/>
+          <div class="rt-ov"></div>
+          <div class="rt-airports">
+            <span class="rt-ap">TNR</span>
+            <div class="rt-line"></div>
+            <span class="rt-ap">RUN</span>
+          </div>
+        </div>
+        <div class="rt-body">
+          <div class="rt-dest">Antananarivo → La Réunion Roland Garros</div>
+          <div class="rt-freq">Air Madagascar · Air Austral — Quotidien</div>
+          <div class="rt-price">À partir de 320 € <span>/ pers. classe affaires</span></div>
+          <button class="btn btn-primary btn-sm btn-full" style="margin-top:12px" onclick="bookFlight('TNR','RUN')">Rechercher ce vol</button>
+        </div>
+      </div>
+      <div class="rt-card reveal delay-2">
+        <div class="rt-img">
+          <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&q=82&fit=crop" alt="Antananarivo vers Johannesburg" loading="lazy"/>
+          <div class="rt-ov"></div>
+          <div class="rt-airports">
+            <span class="rt-ap">TNR</span>
+            <div class="rt-line"></div>
+            <span class="rt-ap">JNB</span>
+          </div>
+        </div>
+        <div class="rt-body">
+          <div class="rt-dest">Antananarivo → Johannesburg O.R. Tambo</div>
+          <div class="rt-freq">South African · Ethiopian — 3 vols/semaine</div>
+          <div class="rt-price">À partir de 750 € <span>/ pers. classe affaires</span></div>
+          <button class="btn btn-primary btn-sm btn-full" style="margin-top:12px" onclick="bookFlight('TNR','JNB')">Rechercher ce vol</button>
+        </div>
+      </div>
+      <div class="rt-card reveal delay-3">
+        <div class="rt-img">
+          <img src="https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?w=600&q=82&fit=crop" alt="Antananarivo vers Addis-Abeba" loading="lazy"/>
+          <div class="rt-ov"></div>
+          <div class="rt-airports">
+            <span class="rt-ap">TNR</span>
+            <div class="rt-line"></div>
+            <span class="rt-ap">ADD</span>
+          </div>
+        </div>
+        <div class="rt-body">
+          <div class="rt-dest">Antananarivo → Addis-Abeba Bole</div>
+          <div class="rt-freq">Ethiopian Airlines — 7 vols/semaine</div>
+          <div class="rt-price">À partir de 680 € <span>/ pers. classe affaires</span></div>
+          <button class="btn btn-primary btn-sm btn-full" style="margin-top:12px" onclick="bookFlight('TNR','ADD')">Rechercher ce vol</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Avantages Corporate</span>
+      <h2 class="disp-md">Pourquoi Réserver vos Vols<br>avec MadaTours?</h2>
+      <div class="divider center"></div>
+    </div>
+    <div class="bfts-grid">
+      <div class="bft-card reveal delay-1">
+        <div class="bft-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <div class="bft-t">Accès 500+ Compagnies</div>
+        <p class="bft-d">Réseau mondial de compagnies aériennes avec tarifs négociés et allocations de sièges garanties.</p>
+      </div>
+      <div class="bft-card reveal delay-2">
+        <div class="bft-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <div class="bft-t">Billets Flexibles</div>
+        <p class="bft-d">Modification et annulation sans frais jusqu'à 24h avant le départ. Indispensable pour les agendas d'affaires.</p>
+      </div>
+      <div class="bft-card reveal delay-3">
+        <div class="bft-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div class="bft-t">Accès Lounge VIP</div>
+        <p class="bft-d">Accès prioritaire aux salons business des aéroports avec Wi-Fi, restauration et espaces de travail.</p>
+      </div>
+      <div class="bft-card reveal delay-4">
+        <div class="bft-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div class="bft-t">Assistance 24h/7j</div>
+        <p class="bft-d">Équipe dédiée pour gérer les imprévus — retards, annulations, rebookings en temps réel depuis n'importe où.</p>
+      </div>
+    </div>
+
+    <!-- Airlines logos -->
+    <div style="margin-top:64px;text-align:center">
+      <p class="clients-lbl">Compagnies partenaires</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;margin-top:28px">
+        <div style="opacity:.4;filter:grayscale(1);transition:all .2s ease;font-family:var(--ff-head);font-weight:800;font-size:.95rem;color:var(--g700)" onmouseover="this.style.opacity='.8';this.style.filter='grayscale(0)'" onmouseout="this.style.opacity='.4';this.style.filter='grayscale(1)'">Air France</div>
+        <div style="opacity:.4;filter:grayscale(1);transition:all .2s ease;font-family:var(--ff-head);font-weight:800;font-size:.95rem;color:var(--g700)" onmouseover="this.style.opacity='.8';this.style.filter='grayscale(0)'" onmouseout="this.style.opacity='.4';this.style.filter='grayscale(1)'">Emirates</div>
+        <div style="opacity:.4;filter:grayscale(1);transition:all .2s ease;font-family:var(--ff-head);font-weight:800;font-size:.95rem;color:var(--g700)" onmouseover="this.style.opacity='.8';this.style.filter='grayscale(0)'" onmouseout="this.style.opacity='.4';this.style.filter='grayscale(1)'">Ethiopian</div>
+        <div style="opacity:.4;filter:grayscale(1);transition:all .2s ease;font-family:var(--ff-head);font-weight:800;font-size:.95rem;color:var(--g700)" onmouseover="this.style.opacity='.8';this.style.filter='grayscale(0)'" onmouseout="this.style.opacity='.4';this.style.filter='grayscale(1)'">Turkish Airlines</div>
+        <div style="opacity:.4;filter:grayscale(1);transition:all .2s ease;font-family:var(--ff-head);font-weight:800;font-size:.95rem;color:var(--g700)" onmouseover="this.style.opacity='.8';this.style.filter='grayscale(0)'" onmouseout="this.style.opacity='.4';this.style.filter='grayscale(1)'">Kenya Airways</div>
+        <div style="opacity:.4;filter:grayscale(1);transition:all .2s ease;font-family:var(--ff-head);font-weight:800;font-size:.95rem;color:var(--g700)" onmouseover="this.style.opacity='.8';this.style.filter='grayscale(0)'" onmouseout="this.style.opacity='.4';this.style.filter='grayscale(1)'">Air Austral</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <h2>Voyage d'Affaires Urgent ?</h2>
+      <p class="lead">Notre équipe émet vos billets en moins de 2 heures, même le soir et le week-end. Contactez-nous directement.</p>
+      <div class="cta-acts">
+        <a href="contact.html" class="btn btn-white btn-lg">Demande Express</a>
+        <a href="tel:+261202252000" class="btn btn-ghost btn-lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          +261 20 22 520 00
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <div class="ft-logo">
+          <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="rgba(255,255,255,0.1)"/><path d="M8 24l6-12 4 6 5-9 6 15" stroke="#38E5FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="29" cy="14" r="3" fill="#1565C0"/></svg>
+          <span class="ft-logo-name">MadaTours Corporate</span>
+        </div>
+        <p>Votre partenaire de confiance pour l'ensemble de vos déplacements professionnels à Madagascar et à l'international.</p>
+        <div class="ft-certs">
+          <span class="ft-cert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> IATA</span>
+          <span class="ft-cert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 24/7</span>
+          <span class="ft-cert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> ISO</span>
+        </div>
+      </div>
+      <div>
+        <div class="ft-title">Navigation</div>
+        <div class="ft-links">
+          <a href="index.html" class="ft-link">Accueil</a>
+          <a href="hotel.html" class="ft-link">Réserver un Hôtel</a>
+          <a href="vol.html" class="ft-link">Réserver un Vol</a>
+          <a href="contact.html" class="ft-link">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-title">Vols</div>
+        <div class="ft-links">
+          <a href="#" class="ft-link">Classe Affaires</a>
+          <a href="#" class="ft-link">Première Classe</a>
+          <a href="#" class="ft-link">Billets Flexibles</a>
+          <a href="#" class="ft-link">Vols Groupes</a>
+          <a href="#" class="ft-link">Vols Charters</a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-title">Contact</div>
+        <div class="ft-ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Ankorondrano, Antananarivo 101</div>
+        <div class="ft-ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2"/></svg> +261 20 22 520 00</div>
+        <div class="ft-ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> vols@madatours.mg</div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span class="ft-copy">© 2025 MadaTours Corporate Travel. Tous droits réservés.</span>
+      <div class="ft-legal"><a href="#">Confidentialité</a><a href="#">Mentions Légales</a><a href="#">CGV</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+  Demande de vol envoyée — Devis sous 2h !
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réserver un Hôtel — MadaTours Corporate</title>
+  <meta name="description" content="Réservez les meilleurs hôtels d'affaires à Madagascar. Tarifs négociés, salles de réunion, navette aéroport. MadaTours Corporate." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="rgba(255,255,255,0.12)"/><path d="M8 24l6-12 4 6 5-9 6 15" stroke="#38E5FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="29" cy="14" r="3" fill="#1565C0"/></svg>
+      <div class="logo-text"><span class="logo-name">MadaTours</span><span class="logo-tag">Corporate Travel</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="hotel.html" class="nav-link active">Hôtels</a></li>
+      <li><a href="vol.html" class="nav-link">Vols</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:+261202252000" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +261 20 22 520 00
+      </a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Demander un Devis</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span class="hbg-bar"></span><span class="hbg-bar"></span><span class="hbg-bar"></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="mob-link">Accueil</a>
+  <a href="hotel.html" class="mob-link active">Réserver un Hôtel</a>
+  <a href="vol.html" class="mob-link">Réserver un Vol</a>
+  <a href="contact.html" class="mob-link">Contact</a>
+  <a href="contact.html" class="btn btn-primary btn-full mob-cta">Demander un Devis</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-glow"></div>
+  <div class="container">
+    <div class="ph-inner">
+      <span class="eyebrow" style="color:rgba(255,255,255,.55)">Hébergement Business</span>
+      <h1 class="disp-lg">Réservez votre Hôtel d'Affaires</h1>
+      <p class="lead">Sélection premium d'hôtels business à Madagascar — salles de réunion, connexion fibre, transferts inclus.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="bk-sec">
+  <div class="container">
+    <div class="bk-card">
+      <div class="bk-head">
+        <div class="bk-head-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+        </div>
+        <div>
+          <h3>Recherche d'Hôtels</h3>
+          <span style="font-size:.8rem;color:rgba(255,255,255,.55)">Tarifs négociés exclusifs pour les voyageurs d'affaires</span>
+        </div>
+      </div>
+      <div class="bk-body">
+        <!-- Row 1: destination + dates + rooms -->
+        <div class="bk-row bk-row-4" style="margin-bottom:16px">
+          <div class="fg">
+            <label class="f-lbl-dk">Destination</label>
+            <div class="iw-dk" style="position:relative">
+              <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--g400);pointer-events:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <input class="fi-dk" style="padding-left:42px" type="text" placeholder="Antananarivo, Nosy Be, Toliara..." />
+            </div>
+          </div>
+          <div class="fg">
+            <label class="f-lbl-dk">Arrivée</label>
+            <div style="position:relative">
+              <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--g400);pointer-events:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <input class="fi-dk" style="padding-left:42px" type="date" id="checkin" />
+            </div>
+          </div>
+          <div class="fg">
+            <label class="f-lbl-dk">Départ</label>
+            <div style="position:relative">
+              <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--g400);pointer-events:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <input class="fi-dk" style="padding-left:42px" type="date" id="checkout" />
+            </div>
+          </div>
+          <div class="fg">
+            <label class="f-lbl-dk">Chambres</label>
+            <select class="fs-dk">
+              <option>1 chambre, 1 adulte</option>
+              <option>1 chambre, 2 adultes</option>
+              <option>2 chambres</option>
+              <option>3 chambres</option>
+              <option>4+ chambres</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Row 2: category + price + rating + amenities -->
+        <div class="bk-row bk-row-4" style="margin-bottom:20px">
+          <div class="fg">
+            <label class="f-lbl-dk">Catégorie</label>
+            <select class="fs-dk">
+              <option value="">Toutes catégories</option>
+              <option>Business Standard ⭐⭐⭐</option>
+              <option>Business Premium ⭐⭐⭐⭐</option>
+              <option>Executive &amp; Suites ⭐⭐⭐⭐⭐</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label class="f-lbl-dk">Budget max / nuit</label>
+            <div class="range-g">
+              <input type="range" min="50000" max="600000" value="300000" step="10000" id="priceRange" oninput="updatePrice(this.value)"/>
+              <div class="range-lbx">
+                <span>50 000 MGA</span>
+                <span class="range-v" id="priceVal">300 000 MGA</span>
+              </div>
+            </div>
+          </div>
+          <div class="fg">
+            <label class="f-lbl-dk">Étoiles minimum</label>
+            <select class="fs-dk">
+              <option>Indifférent</option>
+              <option>3 étoiles +</option>
+              <option>4 étoiles +</option>
+              <option>5 étoiles</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label class="f-lbl-dk">Petit-déjeuner</label>
+            <select class="fs-dk">
+              <option>Non inclus</option>
+              <option>Petit-déjeuner inclus</option>
+              <option>Demi-pension</option>
+              <option>Pension complète</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Advanced options toggle -->
+        <button class="adv-toggle" id="advToggle" onclick="toggleAdv()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          Options avancées (équipements, accessibilité, politique d'annulation)
+        </button>
+
+        <div class="adv-opts" id="advOpts">
+          <div class="bk-row bk-row-3">
+            <div class="fg">
+              <label class="f-lbl-dk">Équipements requis</label>
+              <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px">
+                <label style="display:flex;align-items:center;gap:8px;font-size:.875rem;color:var(--g600);cursor:pointer"><input type="checkbox" style="accent-color:var(--blue)"/> Salle de réunion</label>
+                <label style="display:flex;align-items:center;gap:8px;font-size:.875rem;color:var(--g600);cursor:pointer"><input type="checkbox" style="accent-color:var(--blue)"/> Navette aéroport</label>
+                <label style="display:flex;align-items:center;gap:8px;font-size:.875rem;color:var(--g600);cursor:pointer"><input type="checkbox" style="accent-color:var(--blue)"/> Parking gratuit</label>
+                <label style="display:flex;align-items:center;gap:8px;font-size:.875rem;color:var(--g600);cursor:pointer"><input type="checkbox" style="accent-color:var(--blue)"/> Gym / Fitness</label>
+              </div>
+            </div>
+            <div class="fg">
+              <label class="f-lbl-dk">Politique d'annulation</label>
+              <select class="fs-dk">
+                <option>Toutes politiques</option>
+                <option>Annulation gratuite uniquement</option>
+                <option>Remboursable jusqu'à 24h</option>
+                <option>Remboursable jusqu'à 48h</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="f-lbl-dk">Notes spéciales</label>
+              <textarea class="fi-dk" rows="4" placeholder="Chambre communicante, étage élevé, vue préférée, besoins spéciaux..."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:24px;display:flex;gap:12px;align-items:center">
+          <button class="btn btn-cta btn-lg" onclick="searchHotels(this)" style="min-width:220px">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            Rechercher
+          </button>
+          <button class="btn btn-secondary" onclick="resetHotelForm()">Réinitialiser</button>
+          <span style="font-size:.82rem;color:var(--g400);margin-left:8px">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle;margin-right:4px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Tarifs négociés exclusifs — Paiement sécurisé
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="section">
+  <div class="container">
+    <div class="res-hd">
+      <div>
+        <h2 style="font-size:1.4rem">Hôtels Business à Madagascar</h2>
+        <div class="res-count"><span>12</span> établissements disponibles</div>
+      </div>
+      <select class="sort-sel">
+        <option>Trier par : Recommandés</option>
+        <option>Prix croissant</option>
+        <option>Prix décroissant</option>
+        <option>Mieux notés</option>
+        <option>Proximité centre-ville</option>
+      </select>
+    </div>
+
+    <div class="htl-grid">
+      <!-- Hotel 1 -->
+      <div class="htl-card reveal delay-1">
+        <div class="htl-img">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=640&q=82&fit=crop" alt="Radisson Blu Antananarivo" loading="lazy"/>
+          <span class="htl-cat">Recommandé Business</span>
+          <div class="htl-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+        <div class="htl-body">
+          <div class="htl-name">Radisson Blu Antananarivo</div>
+          <div class="htl-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Antananarivo Centre, à 18 km de l'aéroport</div>
+          <div class="htl-tags">
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg> Fibre 1Gbps</span>
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/></svg> 3 salles meeting</span>
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Navette incluse</span>
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg> Parking sécurisé</span>
+          </div>
+          <div class="htl-foot">
+            <div>
+              <div class="htl-price">185 000 <span>MGA/nuit</span></div>
+              <div style="font-size:.7rem;color:var(--success);font-weight:600;margin-top:2px">✓ Annulation gratuite</div>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="bookHotel('Radisson Blu Antananarivo')">Réserver</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hotel 2 -->
+      <div class="htl-card reveal delay-2">
+        <div class="htl-img">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=640&q=82&fit=crop" alt="Palissandre Hôtel" loading="lazy"/>
+          <span class="htl-cat">Prestige</span>
+          <div class="htl-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+        <div class="htl-body">
+          <div class="htl-name">Palissandre Hôtel &amp; Spa</div>
+          <div class="htl-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Antananarivo, Iarivo — 20 km aéroport</div>
+          <div class="htl-tags">
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0114.08 0"/></svg> Wifi Premium</span>
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> Centre conférence</span>
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67"/></svg> Spa & Wellness</span>
+          </div>
+          <div class="htl-foot">
+            <div>
+              <div class="htl-price">240 000 <span>MGA/nuit</span></div>
+              <div style="font-size:.7rem;color:var(--success);font-weight:600;margin-top:2px">✓ Petit-déjeuner inclus</div>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="bookHotel('Palissandre Hôtel')">Réserver</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hotel 3 -->
+      <div class="htl-card reveal delay-3">
+        <div class="htl-img">
+          <img src="https://images.unsplash.com/photo-1564501049412-61d2b01aa9a7?w=640&q=82&fit=crop" alt="La Résidence Nosy Be" loading="lazy"/>
+          <span class="htl-cat">Resort Business</span>
+          <div class="htl-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+        <div class="htl-body">
+          <div class="htl-name">La Résidence Nosy Be</div>
+          <div class="htl-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Nosy Be, Hellville</div>
+          <div class="htl-tags">
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0114.08 0"/></svg> Wifi</span>
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/></svg> Salle meeting</span>
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg> Vue mer</span>
+          </div>
+          <div class="htl-foot">
+            <div>
+              <div class="htl-price">320 000 <span>MGA/nuit</span></div>
+              <div style="font-size:.7rem;color:var(--success);font-weight:600;margin-top:2px">✓ Annulation gratuite 48h</div>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="bookHotel('La Résidence Nosy Be')">Réserver</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hotel 4 -->
+      <div class="htl-card reveal delay-1">
+        <div class="htl-img">
+          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=640&q=82&fit=crop" alt="Le Grand Hotel Diego" loading="lazy"/>
+          <span class="htl-cat">Business Classic</span>
+          <div class="htl-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+        <div class="htl-body">
+          <div class="htl-name">Le Grand Hôtel Diego</div>
+          <div class="htl-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Diego-Suarez, centre</div>
+          <div class="htl-tags">
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0114.08 0"/></svg> Wifi</span>
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/></svg> Salle meeting</span>
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2"/></svg> Restaurant</span>
+          </div>
+          <div class="htl-foot">
+            <div>
+              <div class="htl-price">95 000 <span>MGA/nuit</span></div>
+              <div style="font-size:.7rem;color:var(--success);font-weight:600;margin-top:2px">✓ Annulation gratuite</div>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="bookHotel('Le Grand Hôtel Diego')">Réserver</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hotel 5 -->
+      <div class="htl-card reveal delay-2">
+        <div class="htl-img">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=640&q=82&fit=crop" alt="Hôtel Mercure Antananarivo" loading="lazy"/>
+          <span class="htl-cat">4 Étoiles Business</span>
+          <div class="htl-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+        <div class="htl-body">
+          <div class="htl-name">Mercure Antananarivo Ivandry</div>
+          <div class="htl-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Antananarivo, Ivandry</div>
+          <div class="htl-tags">
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0114.08 0"/></svg> Wifi Haut Débit</span>
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/></svg> Business Center</span>
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><circle cx="5.5" cy="18.5" r="2.5"/></svg> Navette</span>
+          </div>
+          <div class="htl-foot">
+            <div>
+              <div class="htl-price">155 000 <span>MGA/nuit</span></div>
+              <div style="font-size:.7rem;color:var(--success);font-weight:600;margin-top:2px">✓ Annulation gratuite 24h</div>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="bookHotel('Mercure Antananarivo')">Réserver</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hotel 6 -->
+      <div class="htl-card reveal delay-3">
+        <div class="htl-img">
+          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=640&q=82&fit=crop" alt="Hôtel Karibotel Toamasina" loading="lazy"/>
+          <span class="htl-cat">Business Port</span>
+          <div class="htl-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+        <div class="htl-body">
+          <div class="htl-name">Karibotel Toamasina</div>
+          <div class="htl-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Toamasina, Port City</div>
+          <div class="htl-tags">
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0114.08 0"/></svg> Wifi</span>
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/></svg> Salle meeting</span>
+            <span class="htl-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/></svg> Vue port</span>
+          </div>
+          <div class="htl-foot">
+            <div>
+              <div class="htl-price">75 000 <span>MGA/nuit</span></div>
+              <div style="font-size:.7rem;color:var(--success);font-weight:600;margin-top:2px">✓ Annulation gratuite</div>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="bookHotel('Karibotel Toamasina')">Réserver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Load more -->
+    <div style="text-align:center;margin-top:48px">
+      <button class="btn btn-secondary btn-lg">Afficher plus d'hôtels (6 restants)</button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-inner">
+      <h2>Besoin d'un Tarif Groupe ou d'un Contrat Corporate ?</h2>
+      <p class="lead">Nos équipes négocient des tarifs préférentiels avec tous les établissements pour vos déplacements récurrents.</p>
+      <div class="cta-acts">
+        <a href="contact.html" class="btn btn-white btn-lg">Négocier un Contrat</a>
+        <a href="tel:+261202252000" class="btn btn-ghost btn-lg">Appeler notre équipe</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <div class="ft-logo">
+          <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="rgba(255,255,255,0.1)"/><path d="M8 24l6-12 4 6 5-9 6 15" stroke="#38E5FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="29" cy="14" r="3" fill="#1565C0"/></svg>
+          <span class="ft-logo-name">MadaTours Corporate</span>
+        </div>
+        <p>Votre partenaire de confiance pour l'ensemble de vos déplacements professionnels à Madagascar et à l'international.</p>
+        <div class="ft-certs">
+          <span class="ft-cert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> IATA</span>
+          <span class="ft-cert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 24/7</span>
+          <span class="ft-cert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> ISO</span>
+        </div>
+      </div>
+      <div>
+        <div class="ft-title">Navigation</div>
+        <div class="ft-links">
+          <a href="index.html" class="ft-link">Accueil</a>
+          <a href="hotel.html" class="ft-link">Réserver un Hôtel</a>
+          <a href="vol.html" class="ft-link">Réserver un Vol</a>
+          <a href="contact.html" class="ft-link">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-title">Services</div>
+        <div class="ft-links">
+          <a href="#" class="ft-link">Hôtels d'Affaires</a>
+          <a href="#" class="ft-link">Contrats Corporate</a>
+          <a href="#" class="ft-link">Groupes &amp; Séminaires</a>
+          <a href="#" class="ft-link">Transferts VIP</a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-title">Contact</div>
+        <div class="ft-ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Ankorondrano, Antananarivo 101</div>
+        <div class="ft-ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2"/></svg> +261 20 22 520 00</div>
+        <div class="ft-ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> hotels@madatours.mg</div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span class="ft-copy">© 2025 MadaTours Corporate Travel. Tous droits réservés.</span>
+      <div class="ft-legal"><a href="#">Confidentialité</a><a href="#">Mentions Légales</a><a href="#">CGV</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+  Réservation envoyée — Notre équipe vous contacte sous 2h !
+</div>
+<script src="app.js"></script>
+</body>
+</html>
